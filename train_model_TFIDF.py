@@ -102,7 +102,7 @@ print y_test.shape
 
 
 print "build TFIDF features..."
-vectorizer = TfidfVectorizer(max_df=1.0, min_df=1, max_features=5000)
+vectorizer = TfidfVectorizer(max_df=1.0, min_df=1, max_features=10000)
 x_train = vectorizer.fit_transform(x_train).toarray()
 x_test = vectorizer.transform(x_test).toarray()
 
