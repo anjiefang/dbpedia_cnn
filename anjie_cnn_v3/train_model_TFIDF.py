@@ -281,7 +281,7 @@ with tf.Graph().as_default():
               cnn.input_x: x_batch,
               cnn.input_y: y_batch,
               cnn.dropout_keep_prob: 1.0,
-              cnn.weighted_ratio: np.ones([1,FLAGS.n_class])
+              # cnn.weighted_ratio: np.ones([1,FLAGS.n_class])
             }
             step, summaries, loss, accuracy, predictions = sess.run(
                 [global_step, dev_summary_op, cnn.loss, cnn.accuracy, cnn.predictions],
@@ -332,7 +332,7 @@ with tf.Graph().as_default():
             # current_step = tf.train.global_step(sess, global_step)
             if current_step % FLAGS.evaluate_every == 0:
                 print("\nEvaluation:")
-                # f1 = dev_step(x_test, y_test, writer=dev_summary_writer)
+                dev_step(x_test, y_test, writer=dev_summary_writer)
                 print("")
             if current_step % FLAGS.checkpoint_every == 0:
                 path = saver.save(sess, checkpoint_prefix, global_step=current_step)
