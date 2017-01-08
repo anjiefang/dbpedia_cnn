@@ -38,9 +38,13 @@ tf.flags.DEFINE_integer("batch_size", 128, "Batch Size (default: 64)")
 tf.flags.DEFINE_integer("num_epochs", 50, "Number of training epochs (default: 200)")
 tf.flags.DEFINE_integer("evaluate_every", 100, "Evaluate model on dev set after this many steps (default: 100)")
 tf.flags.DEFINE_integer("checkpoint_every", 2000, "Save model after this many steps (default: 100)")
+tf.flags.DEFINE_integer("feature_num", 10000, "Feature number (default: 10000)")
+0
 # Misc Parameters
 tf.flags.DEFINE_boolean("allow_soft_placement", True, "Allow device soft device placement")
 tf.flags.DEFINE_boolean("log_device_placement", False, "Log placement of ops on devices")
+
+
 
 English=True
 
@@ -102,7 +106,7 @@ print y_test[:5]
 
 print "build TFIDF features..."
 # vectorizer = TfidfVectorizer(max_features=500)
-vectorizer = CountVectorizer(max_features=10000)
+vectorizer = CountVectorizer(max_features=FLAGS.feature_num)
 x_train = vectorizer.fit_transform(x_train).toarray()
 x_test = vectorizer.transform(x_test).toarray()
 
