@@ -55,6 +55,9 @@ for attr, value in sorted(FLAGS.__flags.items()):
     print("{}={}".format(attr.upper(), value))
 print("")
 
+
+current_milli_time = lambda: int(round(time.time() * 1000))
+
 # Data Preparatopn
 # ==================================================
 
@@ -352,8 +355,8 @@ with tf.Graph().as_default():
         results['filters'] = FLAGS.filter_sizes
         results['accuracy'] = str(accuracy)
 
-        savePath = "results"
-        with open("{}.json".format(savePath), 'a') as f:
+        savePath = FLAGS.train_data_path + '.' + str(current_milli_time()) + '.FN.' + str(FLAGS.feature_num) +'.res.json'
+        with open(savePath, 'a') as f:
             dumped_result = json.dumps(results)
             f.write(dumped_result + '\n')
 
