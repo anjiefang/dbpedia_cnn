@@ -22,7 +22,7 @@ class TextNN_TFIDF(object):
         reshaped_x = tf.reshape(self.input_x, [-1, feature_size])
 
         with tf.name_scope("layer1"):
-            num_layer1 = 1000
+            num_layer1 = 3000
             W = tf.Variable(tf.truncated_normal([feature_size, num_layer1], stddev=0.1), name="layer1_W")
             b = tf.Variable(tf.constant(0.1, shape=[num_layer1]), name="layer1_b")
             layer1_score =tf.nn.xw_plus_b(reshaped_x, W, b, name="layer1_scores")
@@ -34,7 +34,7 @@ class TextNN_TFIDF(object):
             self.layer1_drop = tf.nn.dropout(layer1_h, self.dropout_keep_prob)
 
         with tf.name_scope("layer2"):
-            num_layer2 = 1000
+            num_layer2 = 3000
             W = tf.get_variable(
                 "layer2_W",
                 shape=[num_layer1, num_layer2],
