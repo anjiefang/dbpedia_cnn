@@ -346,7 +346,7 @@ with tf.Graph().as_default():
         results['f1'] = f1_score.tolist()
         results['confusion'] = confusion.tolist()
         results['filters'] = FLAGS.filter_sizes
-        results['accuracy'] = accuracy
+        results['accuracy'] = str(accuracy)
 
         savePath = "results"
         with open("{}.json".format(savePath), 'a') as f:

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1418ae66-7cfb-46a2-83f8-145390dfd0be" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anjie_cnn_v3/train_model_TFIDF.py" afterPath="$PROJECT_DIR$/anjie_cnn_v3/train_model_TFIDF.py" />
     </list>
     <ignored path="anjie_cnn.iws" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="train_model_TFIDF.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anjie_cnn_v3/train_model_TFIDF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
+            <state relative-caret-position="356">
+              <caret line="348" column="43" lean-forward="false" selection-start-line="348" selection-start-column="43" selection-end-line="348" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -134,8 +135,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="139" />
-    <option name="y" value="23" />
+    <option name="x" value="-298" />
+    <option name="y" value="351" />
     <option name="width" value="1858" />
     <option name="height" value="1057" />
   </component>
@@ -368,7 +369,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="139" y="23" width="1858" height="1057" extended-state="0" />
+    <frame x="-298" y="351" width="1858" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15283842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -663,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anjie_cnn_v3/train_model_TFIDF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
+        <state relative-caret-position="356">
+          <caret line="348" column="43" lean-forward="false" selection-start-line="348" selection-start-column="43" selection-end-line="348" selection-end-column="43" />
           <folding />
         </state>
       </provider>
