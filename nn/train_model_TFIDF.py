@@ -39,7 +39,8 @@ tf.flags.DEFINE_integer("num_epochs", 50, "Number of training epochs (default: 2
 tf.flags.DEFINE_integer("evaluate_every", 100, "Evaluate model on dev set after this many steps (default: 100)")
 tf.flags.DEFINE_integer("checkpoint_every", 2000, "Save model after this many steps (default: 100)")
 tf.flags.DEFINE_integer("feature_num", 10000, "Feature number (default: 10000)")
-0
+tf.flags.DEFINE_integer("node_num", 500, "node number (default: 500)")
+
 # Misc Parameters
 tf.flags.DEFINE_boolean("allow_soft_placement", True, "Allow device soft device placement")
 tf.flags.DEFINE_boolean("log_device_placement", False, "Log placement of ops on devices")
@@ -167,7 +168,8 @@ with tf.Graph().as_default():
             num_classes=FLAGS.n_class,
             filter_sizes=list(map(int, FLAGS.filter_sizes.split(","))),
             num_filters=FLAGS.num_filters,
-            l2_reg_lambda=FLAGS.l2_reg_lambda)
+            l2_reg_lambda=FLAGS.l2_reg_lambda,
+            node_number=FLAGS.node_num)
 
         # Define Training procedure
         global_step = tf.Variable(0, name="global_step", trainable=False)

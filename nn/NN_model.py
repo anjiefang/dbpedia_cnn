@@ -76,7 +76,7 @@ class TextNN_TFIDF2(object):
     """
 
     def __init__(
-            self, feature_size, num_classes, filter_sizes, num_filters, l2_reg_lambda=0.0):
+            self, feature_size, num_classes, filter_sizes, num_filters, l2_reg_lambda=0.0, node_number=500):
         # Placeholders for input, output and dropout
 
         self.input_x = tf.placeholder(tf.float32, [None, 1, feature_size], name="input_x")
@@ -91,7 +91,7 @@ class TextNN_TFIDF2(object):
         reshaped_x = tf.reshape(self.input_x, [-1, feature_size])
 
         with tf.name_scope("layer1"):
-            num_layer1 = 500
+            num_layer1 = node_number
             W = tf.Variable(tf.truncated_normal([feature_size, num_layer1], stddev=0.1), name="layer1_W")
             b = tf.Variable(tf.constant(0.1, shape=[num_layer1]), name="layer1_b")
             layer1_score =tf.nn.xw_plus_b(reshaped_x, W, b, name="layer1_scores")
