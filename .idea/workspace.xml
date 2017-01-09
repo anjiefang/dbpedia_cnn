@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1418ae66-7cfb-46a2-83f8-145390dfd0be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nn/NN_model.py" afterPath="$PROJECT_DIR$/nn/NN_model.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nn/train_model_TFIDF.py" afterPath="$PROJECT_DIR$/nn/train_model_TFIDF.py" />
     </list>
     <ignored path="anjie_cnn.iws" />
@@ -24,12 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train_model_TFIDF.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="train_model_TFIDF.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nn/train_model_TFIDF.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="502">
+              <caret line="360" column="41" lean-forward="false" selection-start-line="360" selection-start-column="41" selection-end-line="360" selection-end-column="41" />
+              <folding>
+                <element signature="e#24#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NN_model.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NN_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nn/NN_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
+            <state relative-caret-position="1767">
               <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
               <folding />
             </state>
@@ -67,6 +68,7 @@
     <findStrings>
       <find>data_helpers</find>
       <find>print</find>
+      <find>writer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,8 +84,8 @@
         <option value="$PROJECT_DIR$/train_model_TFIDF.py" />
         <option value="$PROJECT_DIR$/anjie_cnn_v3/new_data_helpers.py" />
         <option value="$PROJECT_DIR$/anjie_cnn_v3/train_model_TFIDF.py" />
-        <option value="$PROJECT_DIR$/nn/train_model_TFIDF.py" />
         <option value="$PROJECT_DIR$/nn/NN_model.py" />
+        <option value="$PROJECT_DIR$/nn/train_model_TFIDF.py" />
       </list>
     </option>
   </component>
@@ -628,19 +630,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nn/train_model_TFIDF.py">
+    <entry file="file://$PROJECT_DIR$/nn/NN_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="1767">
+          <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nn/NN_model.py">
+    <entry file="file://$PROJECT_DIR$/nn/train_model_TFIDF.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="502">
+          <caret line="360" column="41" lean-forward="false" selection-start-line="360" selection-start-column="41" selection-end-line="360" selection-end-column="41" />
+          <folding>
+            <element signature="e#24#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

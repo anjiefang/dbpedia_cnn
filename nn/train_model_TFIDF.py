@@ -253,7 +253,7 @@ with tf.Graph().as_default():
                 feed_dict)
             time_str = datetime.datetime.now().isoformat()
             print("{}: step {}, loss {:g}, acc {:g}".format(time_str, step, loss, accuracy))
-            train_summary_writer.add_summary(summaries, step)
+            # train_summary_writer.add_summary(summaries, step)
 
         def train_step(x_batch, y_batch):
             """
@@ -275,7 +275,7 @@ with tf.Graph().as_default():
                 feed_dict)
             time_str = datetime.datetime.now().isoformat()
             print("{}: step {}, loss {:g}, acc {:g}".format(time_str, step, loss, accuracy))
-            train_summary_writer.add_summary(summaries, step)
+            # train_summary_writer.add_summary(summaries, step)
 
         def dev_step(x_batch, y_batch, writer=None):
             """
@@ -302,8 +302,8 @@ with tf.Graph().as_default():
             confusion = metrics.confusion_matrix(ground, predictions, labels=[i for i in xrange(FLAGS.n_class)])
 
             print("{}: step {}, loss {:g}, acc {:g}, precision: {}, recall: {}, f1: {}".format(time_str, step, loss, accuracy, precision, recall, f1_score))
-            if writer:
-                writer.add_summary(summaries, step)
+            # if writer:
+            #     writer.add_summary(summaries, step)
             return precision, recall, f1_score, accuracy, confusion
 
         def predict_step(x_batch, y_batch, writer=None):
@@ -359,4 +359,3 @@ with tf.Graph().as_default():
         with open(savePath, 'a') as f:
             dumped_result = json.dumps(results)
             f.write(dumped_result + '\n')
-
