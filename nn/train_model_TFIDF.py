@@ -7,7 +7,7 @@ import time
 import datetime
 import new_data_helpers as data_helpers
 # from text_cnn_model import TextCNN_TFIDF as TextCNN
-from NN_model import TextNN_TFIDF as TextCNN
+from NN_model import TextNN_TFIDF2 as TextCNN
 from sklearn import metrics, cross_validation, preprocessing
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 import csv
